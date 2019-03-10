@@ -1,7 +1,7 @@
 {
   "name": "searchable-table",
   "releaseQuarter": "Spring",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.0",
