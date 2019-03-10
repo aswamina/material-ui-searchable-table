@@ -1,5 +1,6 @@
 {
   "name": "searchable-table",
+  "releaseQuarter": "Spring",
   "version": "0.1.2",
   "private": true,
   "dependencies": {
