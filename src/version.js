@@ -1,5 +1,5 @@
 const { gitDescribeSync } = require('git-describe');
-const { version } = require('../package.json');
+const { version, releaseQuarter } = require('../package.json');
 const { resolve, relative } = require('path');
 const { writeFileSync } = require('fs-extra');
 
@@ -9,7 +9,7 @@ const gitInfo = gitDescribeSync({
     all: true
 });
 
-gitInfo.version = version;
+gitInfo.version = releaseQuarter + "-" + version;
 
 const file = resolve(__dirname, '..', 'build', 'version.js');
 console.log("FILE NAME =", file);
